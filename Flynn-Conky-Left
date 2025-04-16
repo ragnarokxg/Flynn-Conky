@@ -1,6 +1,6 @@
 conky.config = {
 --############################
---     - Conky Behavior -    #
+--    - Conky  Behavior -    #
 --############################
     out_to_x = false,
     out_to_wayland = true,
@@ -42,7 +42,7 @@ conky.config = {
     draw_shades = false,
 
 --############################
---     - Color Settings -    #
+--    - Color  Settings -    #
 --############################
     default_color = '#FFFFFF',
     default_shade_color = '#000000',
