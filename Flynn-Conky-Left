@@ -40,7 +40,7 @@ conky.config = {
 -- - Graphics Settings - #
 --########################
     draw_shades = false,
-    default_color = '#ffffff',
+    default_color = '#FFFFFF',
     default_shade_color = '#000000',
     color1 = '#FFFFFF',
     color2 = '#E6FFFF',
