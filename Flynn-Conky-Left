@@ -4,47 +4,46 @@ conky.config = {
 --#####################
     out_to_x = false,
     out_to_wayland = true,
-	update_interval = 1,
-	total_run_times = 0,
-	cpu_avg_samples = 1,
-	net_avg_samples = 1,
+    update_interval = 1,
+    total_run_times = 0,
+    cpu_avg_samples = 1,
+    net_avg_samples = 1,
 
-	imlib_cache_size = 0,
-	double_buffer = true,
-	no_buffers = true,
+    imlib_cache_size = 0,
+    double_buffer = true,
+    no_buffers = true,
 
 --####################
 -- - Text settings - #
 --####################
-	use_xft = true,
-	font = 'Fira Book:normal:size=9',
-	override_utf8_locale = true,
-	text_buffer_size = 2048,
+    use_xft = true,
+    font = 'Fira Book:normal:size=9',
+    override_utf8_locale = true,
+    text_buffer_size = 2048,
 
 --############################
 -- - Window specifications - #
 --############################
-	own_window = true,
-	own_window_type = 'desktop',
-	own_window_transparent = false,
-	own_window_argb_visual = true,
-	own_window_argb_value = 178,
-	own_window_colour = '#0C141F',
-	minimum_width = 300, minimum_height = 300,
+    own_window = true,
+    own_window_type = 'desktop',
+    own_window_transparent = false,
+    own_window_argb_visual = true,
+    own_window_argb_value = 178,
+    own_window_colour = '#0C141F',
+    minimum_width = 300, minimum_height = 300,
 
-	alignment = 'middle_left',
-	gap_x = 120,
-	gap_y = 0,
+    alignment = 'middle_left',
+    gap_x = 120,
+    gap_y = 0,
 
 --########################
 -- - Graphics settings - #
 --########################
-	draw_shades = false,
-	default_color = '#ffffff',
-	default_shade_color = '#000000',
-	color1 = '#FFFFFF',
-	color2 = '#E6FFFF',
-
+    draw_shades = false,
+    default_color = '#ffffff',
+    default_shade_color = '#000000',
+    color1 = '#FFFFFF',
+    color2 = '#E6FFFF',
 };
 
 conky.text = [[
