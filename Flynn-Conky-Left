@@ -75,11 +75,11 @@ ${offset 10}${color1}Average: ${color2}${alignc -20}${freq 0}MHz${alignr 10}${cp
 ${cpubar cpu0 8,300 fc8c3b c6396b -t}
 
 ${offset 10}${color1}Top Processes${alignr 60}cpu%${alignr}mem%
-${offset 15}${color1}1  -  ${top name 1}${alignr 75}${color2}${top cpu 1}${alignr 15}${top mem 1}
-${offset 15}${color1}2  -  ${top name 2}${alignr} ${color2}${alignr 75}${top cpu 2} ${alignr 15}${top mem 2}
-${offset 15}${color1}3  -  ${top name 3}${alignr} ${color2}${alignr 75}${top cpu 3} ${alignr 15}${top mem 3}
-${offset 15}${color1}4  -  ${top name 4}${alignr} ${color2}${alignr 75}${top cpu 4} ${alignr 15}${top mem 4}
-${offset 15}${color1}5  -  ${top name 5}${alignr} ${color2}${alignr 75}${top cpu 5} ${alignr 15}${top mem 5}
+${offset 15}${color1}1  -  ${color2}${top name 1}${alignr 75}${top cpu 1}${alignr 15}${top mem 1}
+${offset 15}${color1}2  -  ${color2}${top name 2}${alignr 75}${top cpu 2}${alignr 15}${top mem 2}
+${offset 15}${color1}3  -  ${color2}${top name 3}${alignr 75}${top cpu 3}${alignr 15}${top mem 3}
+${offset 15}${color1}4  -  ${color2}${top name 4}${alignr 75}${top cpu 4}${alignr 15}${top mem 4}
+${offset 15}${color1}5  -  ${color2}${top name 5}${alignr 75}${top cpu 5}${alignr 15}${top mem 5}
 
 #-------------------------------------------------------------------------------------------------------------------------------
 #                                                   Memory
@@ -93,11 +93,11 @@ ${offset 10}${color1}SWAP:${alignc -20}${color2}$swap / ${color2}$swapmax ${colo
 ${swapbar 8,300}
 
 ${offset 10}${color1}Top Processes${alignr 60}cpu%${alignr}mem%
-${offset 15}${color1}1  -  ${top_mem name 1}${alignr} ${color2}${alignr 75}${top cpu 1} ${alignr 15}${top mem 1}
-${offset 15}${color1}2  -  ${top_mem name 2}${alignr} ${color2}${alignr 75}${top_mem cpu 2} ${alignr 15}${top_mem mem 2}
-${offset 15}${color1}3  -  ${top_mem name 3}${alignr} ${color2}${alignr 75}${top_mem cpu 3} ${alignr 15}${top_mem mem 3}
-${offset 15}${color1}4  -  ${top_mem name 4}${alignr} ${color2}${alignr 75}${top_mem cpu 4} ${alignr 15}${top_mem mem 4}
-${offset 15}${color1}5  -  ${top_mem name 5}${alignr} ${color2}${alignr 75}${top_mem cpu 5} ${alignr 15}${top_mem mem 5}
+${offset 15}${color1}1  -  ${color2}${top_mem name 1}${alignr 75}${top_mem cpu 1}${alignr 15}${top_mem mem 1}
+${offset 15}${color1}2  -  ${color2}${top_mem name 2}${alignr 75}${top_mem cpu 2}${alignr 15}${top_mem mem 2}
+${offset 15}${color1}3  -  ${color2}${top_mem name 3}${alignr 75}${top_mem cpu 3}${alignr 15}${top_mem mem 3}
+${offset 15}${color1}4  -  ${color2}${top_mem name 4}${alignr 75}${top_mem cpu 4}${alignr 15}${top_mem mem 4}
+${offset 15}${color1}5  -  ${color2}${top_mem name 5}${alignr 75}${top_mem cpu 5}${alignr 15}${top_mem mem 5}
 
 ${color2}${goto 10}$hr
 
