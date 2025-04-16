@@ -1,7 +1,7 @@
 conky.config = {
---############################
---    - Conky  Behavior -    #
---############################
+--#############################
+--#    - Conky  Behavior -    #
+--#############################
     out_to_x = false,
     out_to_wayland = true,
     update_interval = 1,
@@ -13,17 +13,17 @@ conky.config = {
     double_buffer = true,
     no_buffers = true,
 
---############################
---     - Text Settings -     #
---############################
+--#############################
+--#     - Text Settings -     #
+--#############################
     use_xft = true,
     font = 'Fira Book:normal:size=9',
     override_utf8_locale = true,
     text_buffer_size = 2048,
 
---############################
--- - Window Specifications - #
---############################
+--#############################
+--# - Window Specifications - #
+--#############################
     own_window = true,
     own_window_type = 'desktop',
     own_window_transparent = false,
@@ -36,14 +36,14 @@ conky.config = {
     gap_x = 120,
     gap_y = 0,
 
---############################
---   - Graphics Settings -   #
---############################
+--#############################
+--#   - Graphics Settings -   #
+--#############################
     draw_shades = false,
 
---############################
---    - Color  Settings -    #
---############################
+--#############################
+--#    - Color  Settings -    #
+--#############################
     default_color = '#FFFFFF',
     default_shade_color = '#000000',
     color1 = '#FFFFFF',
