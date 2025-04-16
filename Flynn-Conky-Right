@@ -2,7 +2,7 @@ conky.config = {
 --#####################
 -- - Conky settings - #
 --#####################
-     out_to_x = false,
+    out_to_x = false,
     out_to_wayland = true,
     update_interval = 1,
     total_run_times = 0,
