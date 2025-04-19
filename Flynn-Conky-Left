@@ -56,18 +56,19 @@ conky.text = [[
 #--------------------------------------------------------------------------------------------------------------------------------
 ${color2}${font ConkySymbols:size=14}a${font} S Y S T E M» $hr 
 
-${offset 10}${color1}OS:           ${color2}${alignr 10}${exec cat /etc/*-release | grep 'DISTRIB' | awk -F '=' 'NR==1 {print $2}'}
-${offset 10}${color1}Version:      ${color2}${alignr 10}${exec cat /etc/*-release | grep 'VERSION' | awk -F '"' 'NR==2 {print $2}' | cut -c 1-11}
-${offset 10}${color1}Kernel:       ${color2}${alignr 10}${kernel}
-${offset 10}${color1}Uptime:       ${color2}${alignr 10}$uptime
-${offset 10}${color1}Battery Time: ${color2}${alignr 10}${battery_time BAT0}
+${offset 10}${color1}OS:                ${color2}${alignr 10}${exec cat /etc/*-release | grep 'PRETTY_NAME' | awk -F '"' 'NR==1 {print $2}'}
+${offset 10}${color1}Host:              ${color2}${alignr 10}${exec cat /sys/devices/virtual/dmi/id/product_version}
+${offset 10}${color1}Kernel:            ${color2}${alignr 10}${kernel}
+${offset 10}${color1}DE:                ${color2}${alignr 10}${exec echo $XDG_CURRENT_DESKTOP}
+${offset 10}${color1}Uptime:            ${color2}${alignr 10}${uptime}
+${offset 10}${color1}Battery Time:      ${color2}${alignr 10}${battery_time}
 
 #--------------------------------------------------------------------------------------------------------------------------------
 #                                                   CPU
 #-------------------------------------------------------------------------------------------------------------------------------
 ${color2}${font ConkySymbols:size=14}f${font} C P U» $hr
 
-${alignc -15}${font FiraBook:size=10}${color2}${exec cat /proc/cpuinfo|grep 'model name'|awk -F ' ' 'NR==1 {print $4, $5, $6, $7}'}${font}
+${alignc -15}${font FiraBook:size=10}${color2}${exec cat /proc/cpuinfo|grep 'model name'|awk -F ' ' 'NR==1 {print $4, $5, $6, $7}'}
 ${offset 10}${color1}Active Governor: ${color2}${alignr 10}${exec cat /sys/devices/system/cpu/cpu1/cpufreq/scaling_governor}
 ${offset 10}${color1}Clock Rate:      ${color2}${alignr 10}${freq_g 0}GHz
 ${offset 10}${color1}CPU Temp:        ${color2}${alignr 10}${exec sensors | grep 'CPU' | awk 'NR==1 {print $2}'}
